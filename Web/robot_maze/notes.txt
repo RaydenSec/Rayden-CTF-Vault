@@ -1,0 +1,10 @@
+The robots.txt file must be located at the root of the website host to which it applies. 
+For instance, to control crawling on all URLs below https://www.example.com/, 
+It cannot be placed in a subdirectory (for example, at https://example.com/pages/robots.txt). 
+
+A robots.txt file can be posted on a subdomain (for example, https://website.example.com/robots.txt) 
+or on non-standard ports (for example, http://example.com:8181/robots.txt). 
+
+A robots.txt file applies only to paths within the protocol, host, and port where it is posted. 
+That is, rules in https://example.com/robots.txt apply only to files in https://example.com/, 
+not to subdomains such as https://m.example.com/, or alternate protocols, such as http://example.com/. 

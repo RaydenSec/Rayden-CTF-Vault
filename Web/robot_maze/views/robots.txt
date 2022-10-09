@@ -1,0 +1,10 @@
+Now where could the end of this not so mazy maze be...
+
+user-agent: *
+Disallow: /pandora.html/
+
+user-agent: *
+Disallow: /sitemap.xml/
+
+User-agent: *
+Allow: /
