@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Disapproving Cauldron</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {
+                margin: 0; 
+                padding: 0;
+                outline: none; 
+                box-sizing: border-box;
+                list-style: none;
+                text-decoration: none;  
+            }
+
+            body {
+                background: url("./buns.jpg") no-repeat center center fixed;
+                background-size: cover;
+            }
+
+            h1 {
+                padding: 1.5rem;
+            }
+
+            .container {
+                text-align: center;
+                background-color: rgba(255,255,255,0.40);
+                height: 100vh; 
+            }
+
+            .file_input {
+                padding-bottom: 1.5rem;
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>The Disapproving Cauldron</h1>
+            <form action="/check_pic" method="post" enctype="multipart/form-data">
+                <div class="file_input">
+                    <label>Upload recipe file here (.jpg accepted):</label>
+                    <!-- <input type="file" name="profile_pic" accept=".jpg"/>  -->
+                        <input type="file" name="profile_pic"/> 
+                </div>
+                <div class="submit">
+                    <input type="submit" name="upload_btn" value="Upload"/>
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
